@@ -7,7 +7,7 @@ class HistoryNode {
 }
 
 class BrowserHistory {
-    public current: NonNullable<HistoryNode>;
+    private current: HistoryNode;
 
     constructor(public homepage: string) {
         this.current = new HistoryNode(homepage);
